@@ -1,0 +1,97 @@
+
+.page2{
+    min-height:100vh;
+     width:100%;
+ }
+ .con{
+    background-color: rgb(252, 250, 246);
+     white-space: nowrap; 
+    display:inline-block;
+    animation-name: move;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+   padding-top: 10px;
+   padding-bottom: 10px;
+ 
+   
+ } 
+ .moving-text{
+     overflow-x: auto;
+     white-space: nowrap;
+     box-shadow: 0px 8px 16px rgba(6, 106, 142, 0.934);
+ }
+ 
+
+
+ .moving-text::-webkit-scrollbar{
+     display:none;
+
+
+ }
+ 
+ .con img{
+     vertical-align: middle;
+     margin: 10px;
+     text-align: center;
+     
+ }
+ .moving-text img{
+     margin-bottom: 2vw; 
+     margin-right: 2vw;
+   
+ } 
+ img{
+     padding-top: 10px;
+ }
+ @keyframes move {
+     from{
+         transform: translateX(0);
+     }
+     to{
+         transform: translateX(-100%);
+     }
+ }
+ 
+ .text-1{
+     font-size: xx-large;
+     padding: 50px;
+  text-align: center;
+font-weight: bold;
+animation: textAnimation 10s infinite;
+     
+ }
+ @keyframes textAnimation {
+    0% {
+        color: #000; 
+    }
+    50% {
+        color: #ff0000; 
+    }
+    100% {
+        color: #6108efee; 
+    }
+}
+
+ 
+ @media(max-width:600px){
+    .text-1{
+      font-size: medium;
+      font-weight: 100;
+        padding:10px;
+        text-align: center;
+    }
+    img{
+        width:60px;
+        min-height: auto;
+     
+    }
+    .img1{
+        width:20px;
+        height:20px;
+    }
+    .moving-text{
+        
+        box-shadow: 0 8px 16px rgba(142, 6, 115, 0.571);
+    }
+ }
